@@ -1,0 +1,129 @@
+Data 
+-----
+Data is a collection of facts, values, or information.
+
+Database 
+----------
+A database is an organized collection of related data stored.
+>> Easy storage
+>> Easy retrival
+>> Easy update 
+>> Security
+
+DBMS --> Database Management System 
+--------------------------------------
+>> Software to create and manage DBs.
+Ex:
+MySQL, PostgreSQL, Oracle, MongoDB(BSON --> Binary JSON), MariaDB
+
+Relational DBMS 
+----------------
+>> Data will be stored in form of Table(rows, cols)
+>> SQL is must.
+>>MySQL, PostgreSQL, Oracle
+
+Database --> tb1,tb2,tb3 --> tb1(name,age) data
+(Schema)
+
+Entity --> real world object.
+cat --> Entity
+color, weight, height... --> attributes
+
+Table Name --> Cat 
+Coloumns --> name, color.....
+
+
+SQL --> Structured Query Language  
+-------------------------------------
+Syntax 
+-------
+>> Case-insensitive.(a=A)
+SELECT * FROM tbName;
+>> DELIMITER. Statement Terminater ;
+
+Datatypes 
+-------------
+Numeric Datatypes 
+---------------------
+INT --> Whole Numbers 
+FLOAT --> Decimal Numbers
+BIGINT --> Large Whole Numbers 
+DOUBLE --> Large Decimal 
+
+String Datatypes
+--------------------
+CHAR(n) --> Fixed length Character String. CHAR(5) --> "Hello", "Hi", "Priyanka"
+VARCHAR(n) --> Variable length Character String. VARCHAR(5)--> "Hello", "Hi", "Priyanka"
+TEXT --> Paragraph
+ENUM(txt1, txt2,....) --> GENDER ENUM("Male","Female","Others")
+
+Boolean 
+-------
+BOOLEAN --> 0 or 1
+
+Date and Time 
+--------------
+DATE --> "yyyy-mm-dd" "2026-06-04"
+TIME --> "HH:MM:SS"
+DATETIME --> Both
+
+Keys and Constraints 
+----------------------
+Primary Key --> Used to identify each records uniquely. No Duplicates, No Null.
+
+Operators 
+-----------
+= equal. 
+<> != Not equal.  
+<
+>
+<=
+>=
+
+
+Queries 
+----------
+To Create New Database --> CREATE DATABASE dbName;
+To Select DATABASE --> USE dbName;
+To Create Table --> CREATE TABLE tbName (
+    col1 datatype constraint,
+    col2 datatype constraint,
+    .
+    .
+);
+
+To insert records into a Table ---> INSERT INTO tbname (col details (optional)) VALUES (),(),()...;
+To Retrive data from table --> SELECT (col details --> *) FROM tbName;
+To Update a record ---> UPDATE tbName SET col=val;
+To Delete a record --> DELETE FROM tbName;
+Truncate --> TRUNCATE TABLE tbname;
+
+SQL_SAFE_UPDATES ---> You can update/delete only 1 record. Where clause is must. condition should depend on PK col.
+
+
+CRUD 
+-----
+Create --> INSERT
+Read --> SELECT 
+Update --> UPDATE
+Delete --> DELETE 
+
+WHERE 
+-----
+>> Used to filter the records.
+Ex: SELECT, UPDATE, DELETE..... WHERE condition;
+
+
+
+Table 
+------
+ActorDetails 
+------------------
+Name     age   id(pk)
+----------------------
+Ken      42    1
+Ben      39    2
+Quen     56    3
+Ken      39    4
+
+id=4
