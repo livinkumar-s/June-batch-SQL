@@ -80,6 +80,43 @@ Operators
 <=
 >=
 
+BETWEEN 
+-----------
+Used for ranges (inclusive Range)
+Ex: ..... WHERE colName BETWEEN num1 AND num2;
+
+IN, NOT IN
+---
+Used when checking multiple values.
+Ex: ......WHERE Col IN (v1,v2...);
+
+Logical Operators 
+-------------------
+AND 
+OR 
+NOT 
+
+LIKE 
+-----
+>> Used for pattern matching.
+Ex: ... WHERE col LIKE pattern;
+
+Pattern(Wildcard)
+------------------
+% --> will match 0 - inf number of char.
+_ --> will match only one char.
+
+Starts with 'r' --> "r%" --> "run", "runner", "r"
+Ends with r --> "%r" --> "kumar", "raghav"
+
+ORDER BY 
+---------
+>> used to sort a Coloumns.
+Ex: ... ORDER BY col asc/desc;
+
+LIMIT/OFFSET
+--------------
+.... LIMIT num OFFSET num;
 
 Queries 
 ----------
