@@ -150,6 +150,38 @@ WHERE
 >> Used to filter the records.
 Ex: SELECT, UPDATE, DELETE..... WHERE condition;
 
+Functions
+-----------
+in built methods that performs operations on data and return value.
+
+Numeric Functions
+---------------------
+ROUND(dec,noOfDecDig) --> Rounds off a dec to nearest int. ROUND(4.65764754,2) --> 4.6
+FLOOR(dec) --> finds floor value
+CEIL(dec) --> ceil the number
+MOD(num1,num2) 
+ABS(num) --> absolute number.
+POWER(num1,num2)
+sqrt(num)
+
+String Functions
+-----------------
+CONCAT(str1,str2...)
+LENGTH(str)
+UPPER(str)
+LOWER(str)
+TRIM(str)
+LTRIM, RTRIM
+SUBSTRING(str, strt, length)
+REPLACE(str, old, new)
+REVERSE(str)
+
+DATE and TIME 
+---------------
+CURDATE()
+CURTIME()
+NOW()
+DATEDIFF(d1,d2)
 
 
 Table 
