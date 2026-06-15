@@ -28,5 +28,5 @@ select datediff("2026-06-15",curdate()) as diff;
 
 select UPPER(name) from actordetails;
 
-select concat("His name is ",upper(name)," his age is ",age,"years old.") 
+select concat("His name is ",upper(name),". he is ",age," years old.") 
 as details from actordetails;

@@ -69,7 +69,16 @@ DATETIME --> Both
 
 Keys and Constraints 
 ----------------------
+>> It is a rule applied to a column that ensures data integrity.
+
 Primary Key --> Used to identify each records uniquely. No Duplicates, No Null.
+Foreign key --> it creates relation between 2 tables. maintain data integrity.
+
+NOT NULL -> no empty cells
+UNIQUE --> no duplicates
+AUTO_INCREMENT--> generates sequence of numbers... 1,2,3...
+DEFAULT --> assigns default value to a column.
+CHECK  --> insert record on a condition
 
 Operators 
 -----------
@@ -186,7 +195,7 @@ DATEDIFF(d1,d2)
 
 Table 
 ------
-ActorDetails 
+ActorDetails (Parent)
 ------------------
 Name     age   id(pk)
 ----------------------
@@ -195,4 +204,22 @@ Ben      39    2
 Quen     56    3
 Ken      39    4
 
-id=4
+
+Spouse 
+--------
+id    name      actorId (id(ActorDetails))
+----------------------------
+1     teresa    2
+2     faroq     3
+3     leo       10(invalid)
+
+
+Movies 
+-----------
+id   name         actorId (fk -- actorId --> ActorDetails(id)) (Child)
+------------------------------
+1    talk to me     1
+2    george         4
+3    mallow         2
+4    salmon         1
+5    movie          2
