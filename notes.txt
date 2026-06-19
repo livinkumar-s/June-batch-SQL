@@ -192,34 +192,70 @@ CURTIME()
 NOW()
 DATEDIFF(d1,d2)
 
+ALTER 
+--------
+
+
+
+Joins 
+------
+>> It is used to combine two or more tables based on a related column.
+
+INNER JOIN 
+-----------
+>> It retrives only matching records from both table.
+Ex: SELECT colDetails FROM tb1 INNER JOIN tb2 ON relatedColumn;
+
+LEFT OUTER JOIN 
+------------------
+>> It retrves all record from left table.
+>> Only matching records from right table.
+Ex: SELECT colDetails FROM tb1 LEFT JOIN tb2 ON relatedColumn;
+
+RIGHT OUTER JOIN 
+------------------
+>> It retrves all record from right table.
+>> Only matching records from left table.
+Ex: SELECT colDetails FROM tb1 RIGHT JOIN tb2 ON relatedColumn;
+
+FULL OUTER JOIN 
+-------------------
+>> It retrives all records from both tables.
+Left Join (union) right join.
+
+CROSS JOIN 
+----------
+>> matches every row from left table to every row from right.
+Ex: SELECT colDetails FROM tb1 CROSS JOIN tb2;
+
+rows from left * rows right table
+
+SELF JOIN 
+---------
+>> Table is joined with itself.
+
+
 
 Table 
 ------
-ActorDetails (Parent)
-------------------
-Name     age   id(pk)
-----------------------
-Ken      42    1
-Ben      39    2
-Quen     56    3
-Ken      39    4
+1	Virat	            1	70
+2	Dhoni	            1	50
+3	Rohit	            1	30
+4	Sachin Tendulkar	0	51
+5	KL Rahul	        1	30 null 
+6	Abishek Sharma	    1	17 null 
+7	Rutu	            1	18 null
 
 
-Spouse 
---------
-id    name      actorId (id(ActorDetails))
-----------------------------
-1     teresa    2
-2     faroq     3
-3     leo       10(invalid)
+1	MI	    3
+2	CSK	    2
+3	MI	    4
+4	RCB	    1
+5	PBKS	9
 
 
-Movies 
------------
-id   name         actorId (fk -- actorId --> ActorDetails(id)) (Child)
-------------------------------
-1    talk to me     1
-2    george         4
-3    mallow         2
-4    salmon         1
-5    movie          2
+1	MI	    3
+2	CSK	    2
+3	MI	    4
+4	RCB	    1
+5	PBKS	9
