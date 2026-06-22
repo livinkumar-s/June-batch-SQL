@@ -235,27 +235,20 @@ SELF JOIN
 >> Table is joined with itself.
 
 
+Aggregation
+-------------
+>> Combining multiple rows into single value by performing some calculations.
 
-Table 
-------
-1	Virat	            1	70
-2	Dhoni	            1	50
-3	Rohit	            1	30
-4	Sachin Tendulkar	0	51
-5	KL Rahul	        1	30 null 
-6	Abishek Sharma	    1	17 null 
-7	Rutu	            1	18 null
+COUNT --> number od records 
+MAX 
+MIN 
+AVG --> average 
+SUM --> sum of a numeric col.
 
+Grouping 
+---------
+>> it is going to divide rows into groups and it performs aggregae functions on each groups.
 
-1	MI	    3
-2	CSK	    2
-3	MI	    4
-4	RCB	    1
-5	PBKS	9
+Ex:....arrg().... GROUP BY col;
 
-
-1	MI	    3
-2	CSK	    2
-3	MI	    4
-4	RCB	    1
-5	PBKS	9
+filter the groups --> HAVING cond;
