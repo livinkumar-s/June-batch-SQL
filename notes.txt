@@ -194,8 +194,24 @@ DATEDIFF(d1,d2)
 
 ALTER 
 --------
+>> Used to redefine a table.
 
+>> ALTER TABLE tbName alteration;
 
+To add a new column ---> ...ADD colName dt cons;(AFTER, First)
+To Modify a column --> ....MODIFY col dt cons;
+To Change --> ... CHANGE oldName newName dt;
+To Rename --> ..RENAME COLUMN old TO NewName;
+
+To Drop a column ---> DROP COLUMN colName;
+To Rename Table --> ...RENAME TABLE TO newName;
+
+To add PK --> ... ADD PRIMARY KEY(col); ADD UNIQUE(col)
+To Remove PK --> ...DROP PRIMARY KEY;
+To Add FK -->...ADD CONSTRAINT fk_name FOREIGN KEY(col)  REFERENCES (col)
+
+DROP Table --> DROP TABLE tbName;
+DROP DB --> DROP DATABSE dbName;
 
 Joins 
 ------
@@ -252,3 +268,5 @@ Grouping
 Ex:....arrg().... GROUP BY col;
 
 filter the groups --> HAVING cond;
+
+
