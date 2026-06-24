@@ -270,3 +270,27 @@ Ex:....arrg().... GROUP BY col;
 filter the groups --> HAVING cond;
 
 
+Sub Queries 
+------------
+>> Sub query (nested query) is a query written inside another.
+inner query executes first 
+result passed to outer query 
+
+Ex: ..... (inner query)
+
+Single Row Sub Query 
+-----------------------
+>> It is going top return one row.
+
+Multiple Row Subquery 
+-------------------------
+>> It returns more than 1 row;
+
+ANY --> it should be valid atleast with one value.
+ALL 
+IN 
+
+Correlated Subquery
+---------------------
+>> inner query depends on outer query.
+>> inner query will also gets executed for multiple times.
