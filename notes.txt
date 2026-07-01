@@ -311,3 +311,16 @@ To create VIEW --> CREATE VIEW view_name as SELECT....;
 Transactions 
 ----------------
 >> It executes group of SQL statements as one unit.
+
+Stored Procedures 
+---------------------
+DELIMITER $$
+
+CREATE PROCEDURE proName()
+BEGIN 
+---
+Queries;
+---
+END $$
+
+DELIMITER ;

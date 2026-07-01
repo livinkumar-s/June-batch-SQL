@@ -22,3 +22,12 @@ INSERT INTO bank (name, balance) VALUES
 ('Eve', 3000.00);
 
 select * from bank;
+
+START TRANSACTION;
+update bank set balance=balance-100 where id=1;
+update bank set balance=balance+100 where id=2;
+SAVEPOINT s1;
+update bank set balance=balance-100 where id=3;
+update bank set balance=balance+100 where id=4;
+COMMIT;
+ROLLBACK to s1;
